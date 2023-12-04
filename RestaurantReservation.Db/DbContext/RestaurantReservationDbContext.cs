@@ -15,7 +15,7 @@ public class RestaurantReservationDbContext : DbContext
     public DbSet<ReservationsWithCustomerAndRestaurant> ReservationsWithCustomerAndRestaurants { get; set; }
     public DbSet<EmployeeWithRestaurantDetails> EmployeeWithRestaurantDetails { get; set; }
 
-       public RestaurantReservationDbContext(DbContextOptions<RestaurantReservationDbContext> options) : base(options) { }
+    public RestaurantReservationDbContext(DbContextOptions<RestaurantReservationDbContext> options) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
